@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        form(action="/" method="get")
+            input(type="search" name="keyword")
+            button(type="submit") Chercher
+
+        if musics 
+            for music in musics 
+                p #{music.title}

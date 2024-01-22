@@ -1,6 +1,6 @@
-const app = express();
 const express = require("express");
-const path = express();
+const app = express();
+const path = require("path");
 const routes = require("./app/routes.js");
 const dotenv = require("dotenv");
 dotenv.config();
